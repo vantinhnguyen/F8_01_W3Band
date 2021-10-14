@@ -1,19 +1,132 @@
-* {}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 
 /* I Phan Dau */
 
-.header {}
+.header {
+    height: 46px;
+    width: 100%;
+    background-color: #000;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/* I.1 Nav */
+
+.header .nav {
+    display: flex;
+    list-style: none;
+}
+
+.header .nav>li {
+    padding: 0px 24px;
+    position: relative;
+}
+
+.header .nav>li:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.header .nav>li>a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 46px;
+    text-decoration: none;
+}
+
+.header .nav>li:hover>a {
+    color: #000;
+}
+
+.header .nav>li i {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.header .nav>li:hover i {
+    color: #000;
+}
+
+.header .nav>li:hover .subnav {
+    display: block;
+}
+
+.header .nav .subnav {
+    display: none;
+    list-style: none;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0;
+}
+
+.header .nav .subnav li {
+    background-color: #fff;
+    min-width: 160px;
+    padding: 8px 16px;
+}
+
+.header .nav .subnav li:hover {
+    background-color: #ccc;
+}
+
+.header .nav .subnav li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* I.2 Search */
+
+.header .search {
+    background-color: black;
+}
+
+.header .search i {
+    line-height: 46px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 24px;
+}
+
+.header .search:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
 
 
 /* II Phan than */
 
-.main {}
+.main {
+    margin-top: 46px;
+}
 
 
 /* II.1 Slider */
 
-.slider {}
+.slider {
+    width: 100%;
+    padding-top: 50%;
+    background: url(/data/img/chicago.jpg) no-repeat;
+}
 
 
 /* II.2 The Band */
