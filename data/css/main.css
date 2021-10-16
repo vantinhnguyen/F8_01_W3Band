@@ -122,10 +122,32 @@ html {
 
 /* II.1 Slider */
 
-.slider {
+.main .slider {
     width: 100%;
     padding-top: 50%;
-    background: url(/data/img/chicago.jpg) no-repeat;
+    background: url(/data/img/chicago.jpg) no-repeat no-repeat center / contain;
+    position: relative;
+}
+
+.main .slider .title {
+    padding-bottom: 50px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main .slider .title h2 {
+    padding: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.main .slider .title p {
+    font-weight: 600;
+    line-height: 1.5;
 }
 
 
